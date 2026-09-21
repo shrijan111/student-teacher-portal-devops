@@ -13,4 +13,3 @@ EXPOSE 3306
 
 # Start MySQL
 CMD ["mysqld"]
-
