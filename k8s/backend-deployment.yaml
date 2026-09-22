@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
         - name: backend
-          image: backend-image
-          imagePullPolicy: Never
+          image: la000la/student-portal-backend:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3500
           env:
