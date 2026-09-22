@@ -20,7 +20,7 @@ pipeline {
                 sh '''
                     docker build \
                       -t la000la/student-portal-frontend:${BUILD_NUMBER} \
-                      --build-arg REACT_APP_API_BASE_URL=http://192.168.56.103:3500 \
+                      --build-arg REACT_APP_API_BASE_URL=http://your ip:3500 \
                       ./frontend
                 '''
             }
