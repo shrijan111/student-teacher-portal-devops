@@ -2,9 +2,18 @@ const express = require('express');
 const mysql = require('mysql2/promise');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const client = require('prom-client');
 dotenv.config();
 
 const app = express();
+
+client.collectDefaultMetrics();
+
+app.get('/metrics', async (req, res) => {
+  res.set('Content-Type', client.register.contentType);
+  res.end(await client.register.metrics());
+});
+
 app.use(express.json());
 app.use(cors());
 
