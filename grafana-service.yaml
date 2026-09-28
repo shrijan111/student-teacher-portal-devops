@@ -6,7 +6,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: grafan
+    app: grafana
   ports:
     - port: 3000
       targetPort: 3000
