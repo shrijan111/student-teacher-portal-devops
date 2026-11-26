@@ -66,7 +66,6 @@ Before you begin, ensure that you have the following installed:
      docker run -d --name frontend-container --network=three-tier-network -p 80:80 frontend
      ```
 
-
 4. **Access the Application:**
 
    Open your favorite browser and visit [http://localhost:80](http://localhost:80). Enjoy exploring the MERN stack application!
